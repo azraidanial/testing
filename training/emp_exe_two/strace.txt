@@ -1,0 +1,48 @@
+execve("/MOUNT/fs3419/adaos/share/home/adrd/training/emp_exe_two/empmain", ["empmain"], [/* 127 vars */]) = 0
+brk(0)                                  = 0x99c000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/ADAOS/home/adrd/training/emp_exe_two/tls/x86_64/libemp.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/ADAOS/home/adrd/training/emp_exe_two/tls/x86_64", 0x7ffd559b6280) = -1 ENOENT (No such file or directory)
+open("/ADAOS/home/adrd/training/emp_exe_two/tls/libemp.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/ADAOS/home/adrd/training/emp_exe_two/tls", 0x7ffd559b6280) = -1 ENOENT (No such file or directory)
+open("/ADAOS/home/adrd/training/emp_exe_two/x86_64/libemp.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/ADAOS/home/adrd/training/emp_exe_two/x86_64", 0x7ffd559b6280) = -1 ENOENT (No such file or directory)
+open("/ADAOS/home/adrd/training/emp_exe_two/libemp.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=8712, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff299379000
+mmap(NULL, 8232, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff299376000
+mmap(0x7ff299377000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7ff299377000
+close(3)                                = 0
+open("/ADAOS/home/adrd/training/emp_exe_two/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=125838, ...}) = 0
+mmap(NULL, 125838, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff299357000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340;\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1935224, ...}) = 0
+mmap(NULL, 1723000, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff2991b2000
+mmap(0x7ff29934d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19b000) = 0x7ff29934d000
+mmap(0x7ff299353000, 14968, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff299353000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff2991b1000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff2991b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff2991af000
+arch_prctl(ARCH_SET_FS, 0x7ff2991b0700) = 0
+mprotect(0x7ff29934d000, 16384, PROT_READ) = 0
+mprotect(0x7ff299377000, 4096, PROT_READ) = 0
+mprotect(0x401000, 4096, PROT_READ)     = 0
+mprotect(0x7ff29939b000, 4096, PROT_READ) = 0
+munmap(0x7ff299357000, 125838)          = 0
+brk(0)                                  = 0x99c000
+brk(0x9bd000)                           = 0x9bd000
+fstat(1, {st_mode=S_IFREG|0664, st_size=3039, ...}) = 0
+mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff299366000
+write(1, "\nEmployee ID: 999\nEmployee Last "..., 68
+Employee ID: 999
+Employee Last Name: Azrai
+Employee Salary: 100000
+) = 68
+exit_group(0)                           = ?
++++ exited with 0 +++
